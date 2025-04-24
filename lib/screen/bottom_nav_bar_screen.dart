@@ -30,8 +30,8 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
         onTap: _onItemTapped,
         currentIndex: selectedIndex,
         selectedItemColor: Colors.amber[800],
-        unselectedItemColor: Colors.grey, // 👈 set unselected (default) color
-        showUnselectedLabels: true,       // 👈 always show labels
+        unselectedItemColor: Colors.grey, 
+        showUnselectedLabels: true,      
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -43,7 +43,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
-            label: 'School',
+            label: 'corate',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.scale),
