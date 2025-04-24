@@ -16,9 +16,33 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   List<Widget> screen = [
     HomeScreen(),
     CategoryScreen(),
-    Center(child: Text("3")),
-    Center(child: Text("4")),
-    Center(child: Text("5")),
+    Center(child: Column(
+        mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(Icons.travel_explore),
+        SizedBox(height: 10,),
+        Text("corate"),
+
+      ],
+    )),
+    Center(child:Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+      Icon(Icons.flash_on),
+        SizedBox(height: 10,),
+        Text("Sale"),
+
+      ],
+    )),
+    Center(child: Column(
+        mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(Icons.more_horiz),
+        SizedBox(height: 10,),
+        Text("More"),
+
+      ],
+    )),
   ];
 
   // //------------------------- ui ---------------//
@@ -38,15 +62,15 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.category),
+            icon: Icon(Icons.view_list),
             label: 'Category',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
+            icon: Icon(Icons.travel_explore),
             label: 'corate',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.scale),
+            icon: Icon(Icons.flash_on),
             label: 'Sale',
           ),
           BottomNavigationBarItem(

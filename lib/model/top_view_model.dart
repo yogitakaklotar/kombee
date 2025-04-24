@@ -1,6 +1,4 @@
-// To parse this JSON data, do
-//
-//     final topViewModel = topViewModelFromJson(jsonString);
+
 
 import 'dart:convert';
 
